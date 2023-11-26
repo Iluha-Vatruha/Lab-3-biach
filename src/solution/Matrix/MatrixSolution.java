@@ -1,12 +1,22 @@
 package solution.Matrix;
 
-public class MatrixSolution {
+import java.io.Serializable;
+
+public class MatrixSolution implements Serializable {
     private short[][] matrixElements;
-    protected MatrixSolution(short[][] matrix) {
+    private int result;
+    public MatrixSolution(){
+        matrixElements = new short[][] {
+                {1, 2, 3},
+                {4, 5, 6},
+                {7, 8, 9}
+        };
+    }
+    public MatrixSolution(short[][] matrix) {
         this.matrixElements = matrix;
     }
 
-    protected int geoMult(){
+    protected void geoMult(){
         int n = 1;
         for (int i = 0; i < matrixElements.length; i++) {
             for (int j = 0; j < matrixElements[i].length; j++) {
@@ -14,9 +24,9 @@ public class MatrixSolution {
             }
         }
         n /= matrixElements.length * matrixElements.length;
-        return n;
+        result = n;
     }
-    protected int dioSum() {
+    protected void dioSum() {
         int n = matrixElements.length;
         int sum = 0;
         for (int i = 0; i < n; i++) {
@@ -26,9 +36,14 @@ public class MatrixSolution {
         if (n % 2 == 1) {
             sum -= matrixElements[n / 2][n / 2];
         }
-        return sum;
+        result = sum;
     }
-    protected int matrixPop() {
+
+    public int getResult() {
+        return result;
+    }
+
+    protected void matrixPop() {
         int[] array = new int[2 * 32768];
         for (int i = 0; i < matrixElements.length; i++) {
             for (int j = 0; j < matrixElements[i].length; j++) {
@@ -43,6 +58,6 @@ public class MatrixSolution {
                 max_count = array[i];
             }
         }
-        return max_value;
+        result = max_value;
     }
 }
