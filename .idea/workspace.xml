@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="58877ace-0188-440f-bd87-171faac54db2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solution/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solution/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solution/Matrix/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solution/Matrix/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solution/Matrix/SolutionTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solution/Matrix/SolutionTypeHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solution/Text/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solution/Text/Text.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/solution/TypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solution/TypeHandler.java" afterDir="false" />
+    <list default="true" id="58877ace-0188-440f-bd87-171faac54db2" name="Changes" comment="Bugfix:&#10;- Endless recursion">
+      <change beforePath="$PROJECT_DIR$/src/solution/Text/SolutionTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/solution/Text/SolutionTypeHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +82,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700918883823</updated>
-      <workItem from="1701860300734" duration="1052000" />
+      <workItem from="1701860300734" duration="1761000" />
     </task>
+    <task id="LOCAL-00001" summary="Bugfix:&#10;- Endless recursion">
+      <created>1701861569324</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701861569324</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,5 +107,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Bugfix:&#10;- Endless recursion" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bugfix:&#10;- Endless recursion" />
   </component>
 </project>
