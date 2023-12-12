@@ -13,23 +13,24 @@ public class Text {
 
     public static void handle(){
         Input input = TypeHandler.inputType();
+        if (input == Input.NONE) return;
         Solution solution = SolutionTypeHandler.solutionType();
+        if (solution == Solution.NONE) return;
         Output output = TypeHandler.outputType();
+        if (output == Output.NONE) return;
+
         TextSolution bruh = new TextSolution();
         switch(input){
             case FILE: bruh = ReadResult.getToFile(fileNameText); break;
             case CONSOLE: bruh = TextConsoleReader.readConsoleText(); break;
             case DEFAULT: bruh = new TextSolution();break;
-            case NONE: return;
         }
         switch(solution){
             case REPLACE_VOWELS: bruh.solutionText(); break;
-            case NONE: return;
         }
         switch (output){
             case FILE: WriteResult.saveToFile(bruh, fileNameText); break;
             case CONSOLE: TextConsoleWriter.writeConsoleText(bruh);break;
-            case NONE: return;
         }
     }
 }
